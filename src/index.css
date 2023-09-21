@@ -1,3 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: proxima;
+  src: url(/src/assets/fonts/Fontspring-DEMO-proximanovaexcn-regular.otf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: ogg;
+  src: url(/src/assets/fonts/Ogg-Regular-BF646c18fc3ed57.otf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: quatrocento;
+  src: url(/src/assets/fonts/Quattrocento-Regular.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: otto;
+  src: url(/src/assets/fonts/OTTOATTACTYPE.ttf);
+  font-display: swap;
+}
+
+html body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: quatrocento;
+  color: white;
+}
+.drag {
+  cursor: grab;
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
