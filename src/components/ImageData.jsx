@@ -46,257 +46,257 @@ import makeup3 from '../assets/images/makeup3.jpg';
 import makeup4 from '../assets/images/makeup4.jpg';
 import sunset from '../assets/images/sunset.jpg';
 
-export const images = [
+export const ImageData = [
   {
     id: 1,
     img: backdrop,
-    tags: 'art',
+    tag: 'gallery',
   },
   {
     id: 2,
     img: bird,
-    tags: 'animal',
+    tag: 'animal',
   },
   {
     id: 3,
     img: backdrop2,
-    tags: 'art',
+    tag: 'gallery',
   },
   {
     id: 4,
     img: birds,
-    tags: 'animal',
+    tag: 'animal',
   },
   {
     id: 5,
     img: gwen,
-    tags: 'fashion',
+    tag: 'fashion',
   },
   {
     id: 6,
     img: birds,
-    tags: 'animal',
+    tag: 'animal',
   },
   {
     id: 7,
     img: blue,
-    tags: 'flower',
+    tag: 'flower',
   },
   {
     id: 8,
     img: cockatoo,
-    tags: 'animal',
+    tag: 'animal',
   },
   {
     id: 9,
     img: art,
-    tags: 'fashion',
+    tag: 'fashion',
   },
 
   {
     id: 10,
     img: drawing,
-    tags: 'art',
+    tag: 'art',
   },
 
   {
     id: 11,
     img: drawing2,
-    tags: 'art',
+    tag: 'art',
   },
 
   {
     id: 12,
     img: eye,
-    tags: 'art',
+    tag: 'art',
   },
 
   {
     id: 13,
     img: flowers,
-    tags: 'flowers',
+    tag: 'flowers',
   },
 
   {
     id: 14,
     img: greecians,
-    tags: 'people',
+    tag: 'people',
   },
   {
     id: 15,
     img: hands,
-    tags: 'art',
+    tag: 'art',
   },
   {
     id: 16,
     img: leaves,
-    tags: 'flowers',
+    tag: 'flowers',
   },
   {
     id: 17,
     img: library,
-    tags: 'people',
+    tag: 'people',
   },
   {
     id: 18,
     img: modernist,
-    tags: 'art',
+    tag: 'art',
   },
   {
     id: 19,
     img: mother,
-    tags: 'art',
+    tag: 'art',
   },
 
   {
     id: 20,
     img: womanHd,
-    tags: 'art',
+    tag: 'art',
   },
   {
     id: 21,
     img: ahmed,
-    tags: 'fashion',
+    tag: 'fashion',
   },
   {
     id: 22,
     img: bear,
-    tags: 'animal',
+    tag: 'animal',
   },
   {
     id: 23,
     img: beach,
-    tags: 'nature',
+    tag: 'nature',
   },
   {
     id: 24,
     img: charlota,
-    tags: 'people',
+    tag: 'people',
   },
   {
     id: 25,
     img: danie,
-    tags: 'people',
+    tag: 'people',
   },
   {
     id: 26,
     img: dog,
-    tags: 'animal',
+    tag: 'animal',
   },
   {
     id: 27,
     img: fish,
-    tags: 'animal',
+    tag: 'animal',
   },
   {
     id: 28,
     img: flower,
-    tags: 'flower',
+    tag: 'flower',
   },
   {
     id: 29,
     img: flower2,
-    tags: 'flower',
+    tag: 'flower',
   },
   {
     id: 30,
     img: gallery,
-    tags: 'gallery',
+    tag: 'gallery',
   },
   {
     id: 31,
     img: gallery2,
-    tags: 'gallery',
+    tag: 'gallery',
   },
   {
     id: 32,
     img: gallery3,
-    tags: 'gallery',
+    tag: 'gallery',
   },
   {
     id: 33,
     img: gallery4,
-    tags: 'gallery',
+    tag: 'gallery',
   },
   {
     id: 34,
     img: gallery5,
-    tags: 'gallery',
+    tag: 'gallery',
   },
 
   {
     id: 35,
     img: girl,
-    tags: 'art',
+    tag: 'art',
   },
 
   {
     id: 36,
     img: indie,
-    tags: 'art',
+    tag: 'art',
   },
 
   {
     id: 37,
     img: katsiaryna,
-    tags: 'fashion',
+    tag: 'fashion',
   },
   {
     id: 38,
     img: lady,
-    tags: 'fashion',
+    tag: 'fashion',
   },
   {
     id: 39,
     img: rock,
-    tags: 'nature',
+    tag: 'nature',
   },
   {
     id: 40,
     img: singer,
-    tags: 'art',
+    tag: 'art',
   },
   {
     id: 41,
     img: green,
-    tags: 'nature',
+    tag: 'nature',
   },
   {
     id: 42,
     img: hills,
-    tags: 'nature',
+    tag: 'nature',
   },
 
   {
     id: 43,
     img: sunset,
-    tags: 'nature',
+    tag: 'nature',
   },
 
   {
     id: 44,
     img: makeup,
-    tags: 'makeup',
+    tag: 'makeup',
   },
 
   {
     id: 45,
     img: makeup1,
-    tags: 'makeup',
+    tag: 'makeup',
   },
   {
     id: 46,
     img: makeup2,
-    tags: 'makeup',
+    tag: 'makeup',
   },
   {
     id: 47,
     img: makeup3,
-    tags: 'makeup',
+    tag: 'makeup',
   },
   {
     id: 48,
     img: makeup4,
-    tags: 'makeup',
+    tag: 'makeup',
   },
 ];

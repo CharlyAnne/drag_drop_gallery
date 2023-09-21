@@ -25,84 +25,83 @@
   src: url(/src/assets/fonts/OTTOATTACTYPE.ttf);
   font-display: swap;
 }
+@layer components {
+  .loader {
+    width: 45px;
+    aspect-ratio: 0.75;
+    --c: no-repeat linear-gradient(theme(colors.stone.800) 0 0);
+    background: var(--c) 0% 50%, var(--c) 50% 50%, var(--c) 100% 50%;
+    background-size: 20% 50%;
+    animation: loading 1s infinite linear;
+  }
 
-html body {
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  font-family: quatrocento;
+  @keyframes loading {
+    20% {
+      background-position: 0% 0%, 50% 50%, 100% 50%;
+    }
+    40% {
+      background-position: 0% 100%, 50% 0%, 100% 50%;
+    }
+    60% {
+      background-position: 0% 50%, 50% 100%, 100% 0%;
+    }
+    80% {
+      background-position: 0% 50%, 50% 50%, 100% 100%;
+    }
+  }
+}
+html {
+  background-color: white;
+}
+.logo {
+  color: #4a4a4a;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  background-color: pink;
+  border-radius: 2px 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px #8b8b8b;
+}
+.white {
   color: white;
 }
-.drag {
-  cursor: grab;
+.grid {
+  background-color: white;
+  box-shadow: 1px 2px 10px #777;
+  margin: 3rem 5rem;
+  padding: 3rem;
+  border-radius: 5px;
 }
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.img-container {
+  position: relative;
+  top: -0.1rem;
+  left: -0.1rem;
+  right: -0.1rem;
+  z-index: 1;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.img {
+  box-shadow: 1px 2px 10px rgb(205, 155, 164);
+  border-radius: 5px;
+  object-fit: cover;
+  vertical-align: bottom;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.img-container:hover {
+  box-shadow: 3px 3px 5px pink;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.p-8 {
+  height: 100vh;
+  background-image: url(./assets/login.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.center {
+  margin: 0 auto;
 }
-button:hover {
-  border-color: #646cff;
+.center button:hover {
+  background-color: #ff4a93;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+input {
+  color: #3a2929;
 }
