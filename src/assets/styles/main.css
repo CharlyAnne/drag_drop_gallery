@@ -1,0 +1,71 @@
+/* #preloader {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url('../backdrop.webp'), lightgray;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: otto;
+  overflow: hidden;
+} */
+
+#signup {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url('../signup.jpg'), lightgray;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* font-family: otto; */
+  overflow: hidden;
+}
+#signup h1 {
+  color: #ea5455;
+  font-weight: bolder;
+}
+button {
+  color: #111;
+}
+button:hover {
+  background-color: #ea5455;
+}
+#login {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url('../login.jpg'), lightgray;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* font-family: otto; */
+  overflow: hidden;
+}
+#library {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url('../images/library.jpg'), lightgray;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: otto;
+  overflow-y: auto;
+}
