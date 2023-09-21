@@ -17,7 +17,9 @@ function Library() {
       {isLoading ? (
         <Loader />
       ) : (
-        <h1 className="large">We miss you already. Kindly log back in!</h1>
+        <div className="home">
+          {/* <h1 className="large">Login To view our gallery!</h1> */}
+        </div>
       )}
     </section>
   );

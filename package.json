@@ -19,19 +19,13 @@
     "framer-motion": "^10.16.4",
     "@supabase/supabase-js": "^2.36.0",
     "prop-types": "^15.8.1",
-    "gsap": "file:gsap-bonus.tgz",
     "bootstrap": "^5.3.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-content-loader": "^6.0.3",
     "react-dom": "^18.2.0",
-    "react-sortablejs": "^6.1.4",
     "sortablejs": "^1.15.0",
-    "react-loading-skeleton": "^3.3.1",
-    "react-reveal": "^1.2.2",
-    "react-icons": "^4.11.0",
-    "react-router-dom": "^6.15.0",
-    "react-typed": "^1.2.0"
+    "react-router-dom": "^6.15.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

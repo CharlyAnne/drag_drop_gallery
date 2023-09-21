@@ -1,12 +1,16 @@
 import { useState } from 'react';
 import Loader from '../components/Loader';
+import { Alert, AlertIcon, AlertDescription } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '../client';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [loginsuccess, setLoginSuccess] = useState('');
+
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
@@ -14,6 +18,7 @@ const Login = () => {
 
     try {
       setLoading(true);
+      setLoginSuccess('Sign in successful! Hold on a sec');
       const { data, error } = await supabase.auth.signInWithPassword({
         email,
         password,
@@ -27,7 +32,10 @@ const Login = () => {
       }
       return data;
     } catch (error) {
-      alert(error.error_description || error.message || 'Error signing In');
+      console.log(error);
+      let errorMessage =
+        'User not found. Please check that you input the right credentials and try again.';
+      setError(errorMessage);
     } finally {
       setLoading(false);
     }
@@ -39,8 +47,21 @@ const Login = () => {
         <Loader />
       ) : (
         <section className="flex bg flex-col items-center justify-center p-4">
+          {error && (
+            <Alert className="rounded-lg text-black" status="error">
+              <AlertIcon />
+              <AlertDescription>{error}</AlertDescription>
+            </Alert>
+          )}
+          {loginsuccess && (
+            <Alert className="rounded-lg text-black" status="success">
+              <AlertIcon />
+              {loginsuccess}
+            </Alert>
+          )}
           <h2 className="p-5 title text-4xl italic text-pink-600">Log In</h2>
           <p className="text-white-600">Please enter your credentials</p>
+
           <form
             onSubmit={handleLogin}
             className="flex w-96 flex-col items-start justify-center gap-2 rounded-2xl border-4 border-pink-500 p-4"
