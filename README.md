@@ -21,27 +21,27 @@ This repository contains the solution to the HNGx Stage 3 task
 
 ### Key Features <a name="key-features"></a>
 
-- **Display 10 Featured movies**
-- **search for movies by title**
+- **Simple authentication**
+- **Drag and Drop images**
+- **Search for images by tags**
 - **Display search results**
-- **movie details page**
+- **Images details page**
 - **Navigation**
-- **loading indicator**
+- **Loading indicator**
 
 ### 🚀 Live Demo <a id="live-demo"></a>
 
-[Live_Demo](https://charlynktv.netlify.app)
+[Live_Demo](https://dragndropx.netlify.app)
 
 ### 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <ul>
-  <li><a href="https://javascript.com/">JavaScript</a></li>
-  <li><a href='https://axios-http.com/docs/intro'>Axios</a></li?>
+  <li><a href="https://react.com/">React</a></li>
+  <li><a href='https://supabase.com/docs/intro'>SupaBase</a></li?>
   <li><a href="https://nextjs.org/"></a></li>
   <li><a href="https://tailwindcss.com">TailwindCSS</a></li>
-  <li><a href="https://redux-toolkit.js.org">ReduxToolkit</a></li>
 </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -93,7 +93,7 @@ To run the project, execute the following command:
 You can deploy this project by:
 
 - visiting your repository on [Netlify](https://app.netlify.com/)
-- Signup / Signin
+- Signin
 - Connect your github repo to Netflify
 - Select and project from github
 - Select the main branch and host
