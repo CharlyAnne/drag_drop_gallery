@@ -42,7 +42,6 @@ HNGx Stage 3 task. A webpage demostrating a drag and drop feature with images.
 <ul>
   <li><a href="https://react.com/">React</a></li>
   <li><a href='https://supabase.com/docs/intro'>SupaBase</a></li?>
-  <li><a href="https://nextjs.org/"></a></li>
   <li><a href="https://tailwindcss.com">TailwindCSS</a></li>
 </ul>
 ### Credits <a name="resources"></a>
