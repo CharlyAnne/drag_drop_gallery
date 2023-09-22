@@ -100,7 +100,13 @@ function User() {
                 <button className="absolute right-2">🔍</button>
               </form>
               <p className="text-lg text-white tags text-lg">
-                art. fashion. nature. flower. people. gallery. animal{' '}
+                <span className="tag">art</span>
+                <span className="tag">fashion</span>
+                <span className="tag">nature</span>
+                <span className="tag">flower</span>
+                <span className="tag">people</span>
+                <span className="tag">gallery</span>
+                <span className="tag">animal</span>{' '}
               </p>
             </section>
           </section>

@@ -53,6 +53,12 @@
 html {
   background-color: white;
 }
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: pink;
+}
 .logo {
   color: #4a4a4a;
   font-size: 1.2rem;
@@ -94,10 +100,14 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.tags {
-  color: #ff8faf;
-  text-shadow: 1px 1px #2a2a2a;
+.tag {
+  background-color: pink;
+  color: #4a4a4a;
+  margin-right: 1rem;
+  /* text-shadow: 2px 1px #2a2a2a; */
   font-weight: bold;
+  padding: 0.1rem 0.5rem;
+  border-radius: 3px;
 }
 .large {
   font-size: 2rem;
@@ -166,4 +176,8 @@ html {
 }
 input {
   color: #3a2929;
+}
+.pink {
+  background-color: pink;
+  box-shadow: 1px 2px 7px #aaa;
 }
