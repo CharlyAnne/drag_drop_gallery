@@ -1,9 +1,9 @@
 <a name='readme-top'></a>
 
 <div>
-  <h1><b>Drag & Drop Gallery</b></h1><br/>
+  <h1><b>DragDropX</b></h1><br/>
 </div>
-This repository contains the solution to the HNGx Stage 3 task
+HNGx Stage 3 task. A webpage demostrating a drag and drop feature with images.  
 <br/>
 
 # 📗 Table of Contents
@@ -12,6 +12,7 @@ This repository contains the solution to the HNGx Stage 3 task
 - [🚀 Live Demo](#live-demo)
 - [🛠 Built With](#built-with)
 - [Tech Stack](#tech-stack)
+- [Resources & Credits](#resorces)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -23,15 +24,16 @@ This repository contains the solution to the HNGx Stage 3 task
 
 - **Simple authentication**
 - **Drag and Drop images**
-- **Search for images by tags**
+- **Search for images with tags**
 - **Display search results**
 - **Images details page**
 - **Navigation**
 - **Loading indicator**
+- Error handling**
 
 ### 🚀 Live Demo <a id="live-demo"></a>
 
-[Live_Demo](https://dragndropx.netlify.app)
+[Live_Demo](https://dragdropx.netlify.app)
 
 ### 🛠 Built With <a name="built-with"></a>
 
@@ -42,6 +44,11 @@ This repository contains the solution to the HNGx Stage 3 task
   <li><a href='https://supabase.com/docs/intro'>SupaBase</a></li?>
   <li><a href="https://nextjs.org/"></a></li>
   <li><a href="https://tailwindcss.com">TailwindCSS</a></li>
+</ul>
+### Credits <a name="resources"></a>
+<ul>
+  <li>Art photos from UnSplash</li>
+  <li>Random picturs from Pixabay</li>
 </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -88,7 +95,7 @@ To run the project, execute the following command:
 **run `npm install` on your terminal** to install the necessary dependencies
 **run `npm run dev` on your terminal** to run the project locally
 
-### Deployment || [![Netlify Status](https://api.netlify.com/api/v1/badges/49ed62fd-e47e-48e3-84fb-9afb771c8ed1/deploy-status)](https://app.netlify.com/sites/charlynktv/deploys)
+### Deployment || [![Netlify Status](https://api.netlify.com/api/v1/badges/49ed62fd-e47e-48e3-84fb-9afb771c8ed1/deploy-status)](https://app.netlify.com/sites/dragdropx/deploys)
 
 You can deploy this project by:
 
@@ -102,7 +109,7 @@ You can deploy this project by:
 
 ### 👥 Author <a name="authors"></a>
 
-👤 **Charlian**
+👤 **Charlian Imoisili**
 
 - GitHub: [@CharlyAnne](https://github.com/CharlyAnne)
 - Twitter: [@Imoisiliii](https://twitter.com/Imoisiliii)
