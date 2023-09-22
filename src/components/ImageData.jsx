@@ -72,11 +72,11 @@ export const ImageData = [
     img: gwen,
     tag: 'fashion',
   },
-  {
-    id: 6,
-    img: birds,
-    tag: 'animal',
-  },
+  // {
+  //   id: 6,
+  //   img: birds,
+  //   tag: 'animal',
+  // },
   {
     id: 7,
     img: blue,

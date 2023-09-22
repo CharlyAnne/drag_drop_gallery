@@ -67,7 +67,9 @@ function User() {
       <header className="mb-2 flex flex-wrap items-center justify-between px-8 py-4">
         <h2 className="logo">DragNDrop Gallery</h2>
 
-        <LoginBtn onClick={signOut}>Log Out</LoginBtn>
+        <LoginBtn className="logout" onClick={signOut}>
+          Log Out
+        </LoginBtn>
       </header>
 
       {loading ? (
@@ -90,7 +92,7 @@ function User() {
                 className="relative mb-1 flex h-8 w-80 items-center lg:h-12 lg:w-96"
               >
                 <input
-                  className="absolute inline-flex h-full w-full rounded-full bg-300 p-1 outline-none focus:border-2 focus:border-black lg:p-4 lg:placeholder:text-sm text-pink-500"
+                  className="absolute inline-flex h-full w-full rounded-full bg-300 p-1 outline-none focus:border-2 focus:border-black lg:p-4 lg:placeholder:text-sm "
                   type="text"
                   placeholder="Search Images with tags.."
                   value={tag}
