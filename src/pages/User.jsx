@@ -99,7 +99,7 @@ function User() {
                 />
                 <button className="absolute right-2">🔍</button>
               </form>
-              <p className="text-lg text-white tags text-lg">
+              <p className="text-lg tag-container text-white tags text-lg">
                 <span className="tag">art</span>
                 <span className="tag">fashion</span>
                 <span className="tag">nature</span>
