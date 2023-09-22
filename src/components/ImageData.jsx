@@ -113,8 +113,8 @@ export const ImageData = [
 
   {
     id: 13,
-    img: flowers,
-    tag: 'flowers',
+    img: flower,
+    tag: 'flower',
   },
 
   {
@@ -130,7 +130,7 @@ export const ImageData = [
   {
     id: 16,
     img: leaves,
-    tag: 'flowers',
+    tag: 'flower',
   },
   {
     id: 17,
@@ -190,7 +190,7 @@ export const ImageData = [
   },
   {
     id: 28,
-    img: flower,
+    img: flowers,
     tag: 'flower',
   },
   {

@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import Image from '../components/Image';
 import { ImageData } from '../components/ImageData';
 import LoginBtn from '../components/Btn';
+
+import { Alert, AlertIcon, AlertDescription } from '@chakra-ui/react';
 import { DndContext, closestCenter } from '@dnd-kit/core';
 import {
   SortableContext,
@@ -71,7 +73,16 @@ function User() {
       {loading ? (
         <Loader />
       ) : (
-        <section className="mb-8 p-2 text-black">
+        <section className="mb-8 p-2 text-black hom">
+          {error && (
+            <Alert className="rounded-lg small text-white" status="error">
+              <AlertIcon />
+              <AlertDescription className="error">
+                {' '}
+                Wrong tag name, please try again!
+              </AlertDescription>
+            </Alert>
+          )}
           <section className="mb-2 flex flex-wrap items-center justify-center space-x-4">
             <section>
               <form
@@ -81,23 +92,17 @@ function User() {
                 <input
                   className="absolute inline-flex h-full w-full rounded-full bg-300 p-1 outline-none focus:border-2 focus:border-black lg:p-4 lg:placeholder:text-sm text-pink-500"
                   type="text"
-                  placeholder="Search Images.."
+                  placeholder="Search Images with tags.."
                   value={tag}
                   onChange={(e) => setTag(e.target.value)}
                   required
                 />
                 <button className="absolute right-2">🔍</button>
               </form>
-              <p className="text-sm">
-                Search with tag names like art, nature, people, gallery or
-                animal.
+              <p className="text-lg text-white tags text-lg">
+                art. fashion. nature. flower. people. gallery. animal{' '}
               </p>
             </section>
-            {error && (
-              <h3 className="text-lg text-red-400">
-                Wrong tag name, please try again.
-              </h3>
-            )}
           </section>
 
           <section className="grid grid-cols-1 place-items-center gap-6 p-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">

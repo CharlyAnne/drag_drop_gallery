@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Loader from '../components/Loader';
 import { Alert, AlertIcon, AlertDescription } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
+// import { BiLoader } from 'react-icons/bi';
 import { supabase } from '../client';
 
 const Login = () => {
@@ -34,10 +35,12 @@ const Login = () => {
     } catch (error) {
       console.log(error);
       let errorMessage =
-        'User not found. Please check that you input the right credentials and try again.';
+        'Incorrect credentials! Please check your inputs and try again.';
+
       setError(errorMessage);
     } finally {
       setLoading(false);
+      setLoginSuccess('');
     }
   };
 
@@ -47,21 +50,20 @@ const Login = () => {
         <Loader />
       ) : (
         <section className="flex bg flex-col items-center justify-center p-4">
+          <h2 className="p-5 title text-4xl italic text-pink-600">Log In</h2>
+          <p className="text-white">Please enter your credentials</p>
           {error && (
-            <Alert className="rounded-lg text-black" status="error">
+            <Alert className="rounded-lg small text-white" status="error">
               <AlertIcon />
-              <AlertDescription>{error}</AlertDescription>
+              <AlertDescription className="error">{error}</AlertDescription>
             </Alert>
           )}
           {loginsuccess && (
-            <Alert className="rounded-lg text-black" status="success">
+            <Alert className="rounded-lg small text-white" status="success">
               <AlertIcon />
               {loginsuccess}
             </Alert>
           )}
-          <h2 className="p-5 title text-4xl italic text-pink-600">Log In</h2>
-          <p className="text-white-600">Please enter your credentials</p>
-
           <form
             onSubmit={handleLogin}
             className="flex w-96 flex-col items-start justify-center gap-2 rounded-2xl border-4 border-pink-500 p-4"
@@ -74,11 +76,16 @@ const Login = () => {
               Email:
             </label>
             <input
-              className="w-full rounded-2xl p-2 outline-none focus:outline-pink-500"
+              className={`${
+                error ? 'border-red-600' : ''
+              } bg-transparent px-2 outline-none py-2 rounded-lg border w-full rounded-2xl p-2 outline-none focus:outline-pink-500`}
               type="email"
               id="email"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => {
+                setEmail(e.target.value);
+                setError;
+              }}
               required
             />
             <p className="text-sm white">Email: user@example.com</p>
